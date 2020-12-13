@@ -55,7 +55,7 @@ class AppDeliveryMethod extends StatelessWidget {
                 ),
               ),
               Text(title,
-                  style: _theme.textTheme.body2
+                  style: _theme.textTheme.bodyText1
                       .copyWith(color: _theme.primaryColorLight))
             ],
           ),

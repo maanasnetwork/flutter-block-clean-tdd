@@ -1,11 +1,7 @@
-// Home Screen View #3: Banners
-// Author: Appproject@gmail.com
-// Date: 2020-02-06
-
 import 'package:flutter/material.dart';
-import '../../../config/theme.dart';
-import 'package:Appecommerce/presentation/features/wrapper.dart';
-import 'package:Appecommerce/presentation/widgets/widgets.dart';
+import '../../../../config/theme.dart';
+import '../../../../presentation/features/wrapper.dart';
+import '../../../../presentation/widgets/widgets.dart';
 
 class Main3View extends StatefulWidget {
   final Function changeView;
@@ -42,7 +38,7 @@ class _Main3ViewState extends State<Main3View> {
                       left: AppSizes.sidePadding, bottom: AppSizes.sidePadding),
                   width: width,
                   child: Text('New collection',
-                      style: _theme.textTheme.headline.copyWith(fontSize: 34)))
+                      style: _theme.textTheme.headline5.copyWith(fontSize: 34)))
             ],
           )),
       Row(
@@ -55,7 +51,7 @@ class _Main3ViewState extends State<Main3View> {
                   height: width / 2 - 2,
                   padding: EdgeInsets.all(AppSizes.sidePadding),
                   child: Text('Summer sale',
-                      style: _theme.textTheme.headline
+                      style: _theme.textTheme.headline5
                           .copyWith(fontSize: 34, color: _theme.accentColor))),
               Container(
                   height: width / 2,
@@ -70,7 +66,8 @@ class _Main3ViewState extends State<Main3View> {
                     ),
                   ),
                   child: Text('Black',
-                      style: _theme.textTheme.headline.copyWith(fontSize: 34))),
+                      style:
+                          _theme.textTheme.headline5.copyWith(fontSize: 34))),
             ],
           ),
           Container(
@@ -85,7 +82,7 @@ class _Main3ViewState extends State<Main3View> {
                 ),
               ),
               child: Text('Men’s hoodies',
-                  style: _theme.textTheme.headline.copyWith(fontSize: 34))),
+                  style: _theme.textTheme.headline5.copyWith(fontSize: 34))),
         ],
       ),
       Padding(padding: EdgeInsets.only(top: AppSizes.sidePadding)),

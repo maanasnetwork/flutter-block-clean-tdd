@@ -42,7 +42,7 @@ class AppCheckbox extends StatelessWidget {
                   width: width - rightLinkWidth,
                   child: Text(
                     title,
-                    style: _theme.textTheme.display1.copyWith(
+                    style: _theme.textTheme.headline4.copyWith(
                         fontWeight: FontWeight.bold,
                         color: _theme.primaryColor),
                   ),

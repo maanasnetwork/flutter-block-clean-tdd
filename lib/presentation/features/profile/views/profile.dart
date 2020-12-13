@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:Appecommerce/config/routes.dart';
-import '../../../config/theme.dart';
-import 'package:Appecommerce/presentation/features/wrapper.dart';
-import 'package:Appecommerce/presentation/widgets/independent/menu_line.dart';
+import '../../../../config/routes.dart';
+import '../../../../config/theme.dart';
+import '../../wrapper.dart';
+import '../../../widgets/independent/menu_line.dart';
 
 import '../profile.dart';
 
@@ -122,9 +122,8 @@ class _ProfileViewState extends State<ProfileView> {
             AppMenuLine(
                 title: 'SignIn/SignUp',
                 subtitle: 'Connect your web account',
-                onTap: (() => {
-                      Navigator.of(context).pushNamed(AppEcommerceRoutes.signin)
-                    }))
+                onTap: (() =>
+                    {Navigator.of(context).pushNamed(AppRoutes.signin)}))
           ],
         )
       ],

@@ -18,12 +18,12 @@ class AppSummaryLine extends StatelessWidget {
           children: <Widget>[
             Container(
                 width: width / 2,
-                child: Text(title, style: _theme.textTheme.display3)),
+                child: Text(title, style: _theme.textTheme.headline2)),
             Container(
                 alignment: Alignment.centerRight,
                 width: width / 2,
                 child: Text(summary,
-                    style: _theme.textTheme.display3.copyWith(
+                    style: _theme.textTheme.headline2.copyWith(
                         fontWeight: FontWeight.bold,
                         color: _theme.primaryColor))),
           ],

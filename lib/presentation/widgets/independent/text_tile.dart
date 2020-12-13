@@ -27,7 +27,7 @@ class AppTextTile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(title, style: _theme.textTheme.headline4),
-                      Text(subtitle, style: _theme.textTheme.body1)
+                      Text(subtitle, style: _theme.textTheme.bodyText2)
                     ],
                   ),
                 ),

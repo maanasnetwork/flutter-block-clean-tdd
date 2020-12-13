@@ -38,7 +38,7 @@ class _AppSearchBarState extends State<AppSearchBar> {
                 width: width - 90,
                 child: TextField(
                     controller: _searchKeyController,
-                    style: _theme.textTheme.display3
+                    style: _theme.textTheme.headline2
                         .copyWith(color: _theme.primaryColorLight),
                     decoration: InputDecoration(
                       border: InputBorder.none,

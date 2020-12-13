@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../domain/entities/user/settings.dart';
+import '../../../data/repositories/fake_repos/settings_repository.dart';
 import '../profile/settings_event.dart';
 import '../profile/settings_state.dart';
 

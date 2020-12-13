@@ -106,7 +106,7 @@ class AppProductReviewItem extends StatelessWidget {
       width: double.infinity,
       child: Text(
         writerName,
-        style: Theme.of(context).textTheme.subtitle,
+        style: Theme.of(context).textTheme.subtitle2,
         textAlign: TextAlign.start,
       ),
     );
@@ -142,7 +142,7 @@ class AppProductReviewItem extends StatelessWidget {
       width: double.infinity,
       child: Text(
         comment,
-        style: Theme.of(context).textTheme.body2.copyWith(
+        style: Theme.of(context).textTheme.bodyText1.copyWith(
               fontSize: 14.0,
             ),
         textAlign: TextAlign.start,

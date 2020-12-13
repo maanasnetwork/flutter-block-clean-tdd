@@ -44,7 +44,8 @@ class AppBlockHeader extends StatelessWidget {
                         width: rightLinkWidth,
                         child: Align(
                           alignment: Alignment.centerRight,
-                          child: Text(linkText, style: _theme.textTheme.body2),
+                          child:
+                              Text(linkText, style: _theme.textTheme.bodyText1),
                         ),
                       )
                     : Container(),
@@ -53,7 +54,7 @@ class AppBlockHeader extends StatelessWidget {
             description != null
                 ? Text(
                     description,
-                    style: _theme.textTheme.body2,
+                    style: _theme.textTheme.bodyText1,
                   )
                 : Container()
           ],

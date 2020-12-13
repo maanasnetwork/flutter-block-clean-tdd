@@ -1,5 +1,5 @@
 // Open Flutter E-commerce Light Theme
-// Author: Appproject@gmail.com
+// Author: openflutterproject@gmail.com
 // Date: 2020-02-06
 
 import 'package:flutter/material.dart';

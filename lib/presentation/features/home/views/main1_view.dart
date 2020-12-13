@@ -4,22 +4,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_translate/flutter_translate.dart';
-import 'package:Appecommerce/config/routes.dart';
-import '../../../config/theme.dart';
-import 'package:Appecommerce/data/model/product.dart';
-import 'package:Appecommerce/presentation/features/categories/categories.dart';
-import 'package:Appecommerce/presentation/features/home/home_bloc.dart';
-import 'package:Appecommerce/presentation/features/home/home_event.dart';
-import 'package:Appecommerce/presentation/features/home/home_state.dart';
-import 'package:Appecommerce/presentation/features/wrapper.dart';
-import 'package:Appecommerce/presentation/widgets/widgets.dart';
+import '../../../../config/routes.dart';
+import '../../../../config/theme.dart';
+import '../../../../presentation/features/home/home_bloc.dart';
+import '../../../../presentation/features/home/home_event.dart';
+import '../../../../presentation/features/home/home_state.dart';
+import '../../../../presentation/features/wrapper.dart';
+import '../../../../presentation/widgets/widgets.dart';
 
 class Main1View extends StatefulWidget {
   final Function changeView;
-  final List<Product> products;
 
-  const Main1View({Key key, this.products, this.changeView}) : super(key: key);
+  const Main1View({Key key, this.changeView}) : super(key: key);
 
   @override
   _Main1ViewState createState() => _Main1ViewState();
@@ -56,8 +52,8 @@ class _Main1ViewState extends State<Main1View> {
                       width: width / 2,
                       child: FittedBox(
                         fit: BoxFit.scaleDown,
-                        child: Text(translate('fashionSale'),
-                            style: _theme.textTheme.headline),
+                        child: Text('fashionSale',
+                            style: _theme.textTheme.headline5),
                       ),
                     ),
                     Container(
@@ -81,26 +77,10 @@ class _Main1ViewState extends State<Main1View> {
               title: 'New',
               linkText: 'View All',
               onLinkTap: () => {
-                Navigator.of(context).pushNamed(AppEcommerceRoutes.shop,
-                    arguments: CategoriesParameters(0))
+                Navigator.of(context)
+                    .pushNamed(AppRoutes.signin, arguments: null)
               },
               description: 'You’ve never seen it before!',
-            ),
-            AppProductListView(
-              width: widgetWidth,
-              products: widget.products,
-              onFavoritesTap: ((Product product) => {
-                    BlocProvider.of<HomeBloc>(context).add(
-                        HomeAddToFavoriteEvent(
-                            isFavorite: !product.isFavorite, product: product))
-                  }),
-            ),
-            AppButton(
-              title: 'Next Home Page',
-              width: 160,
-              height: 48,
-              onPressed: (() =>
-                  widget.changeView(changeType: ViewChangeType.Forward)),
             )
           ],
         ),

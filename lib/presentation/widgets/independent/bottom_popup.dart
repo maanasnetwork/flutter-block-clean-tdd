@@ -39,7 +39,7 @@ class AppBottomPopup extends StatelessWidget {
                 ),
               ),
               title != ''
-                  ? Text(title, style: _theme.textTheme.display1)
+                  ? Text(title, style: _theme.textTheme.headline4)
                   : Container(),
               Padding(
                 padding: EdgeInsets.only(bottom: AppSizes.sidePadding),

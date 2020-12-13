@@ -42,7 +42,7 @@ class AppViewOptions extends StatelessWidget {
                   Icon(Icons.filter_list),
                   Padding(
                     padding: EdgeInsets.only(left: 5),
-                    child: Text('Filters', style: _theme.textTheme.body1),
+                    child: Text('Filters', style: _theme.textTheme.bodyText2),
                   )
                 ])),
             InkWell(
@@ -54,7 +54,7 @@ class AppViewOptions extends StatelessWidget {
                   Container(
                     padding: EdgeInsets.only(left: 5),
                     child: Text(sortRules?.getSortTitle() ?? '',
-                        style: _theme.textTheme.body1),
+                        style: _theme.textTheme.bodyText2),
                   )
                 ])),
             IconButton(
@@ -95,7 +95,7 @@ class AppViewOptions extends StatelessWidget {
                 ),
               ),
             ),
-            Text('Sort by', style: Theme.of(context).textTheme.display1),
+            Text('Sort by', style: Theme.of(context).textTheme.headline4),
             Padding(
               padding: EdgeInsets.only(top: AppSizes.sidePadding),
             ),
@@ -117,7 +117,7 @@ class AppViewOptions extends StatelessWidget {
                                 child: Text(value,
                                     style: Theme.of(context)
                                         .textTheme
-                                        .display1
+                                        .headline4
                                         .copyWith(
                                             fontWeight: FontWeight.normal,
                                             color: sortRules.sortType == key

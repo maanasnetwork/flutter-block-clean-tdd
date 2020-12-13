@@ -29,6 +29,8 @@ dependencies:
   flutter_bloc: ^6.1.1
   equatable: ^1.2.5
   data_connection_checker: ^0.3.4
+  http: ^0.12.2
+  get_it: ^5.0.3
   
   cupertino_icons: ^1.0.0
   font_awesome_flutter: ^8.10.1

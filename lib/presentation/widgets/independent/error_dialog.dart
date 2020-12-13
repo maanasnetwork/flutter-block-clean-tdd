@@ -30,7 +30,7 @@ class ErrorDialog extends StatelessWidget {
             child: Text(mainText,
                 style: Theme.of(context)
                     .textTheme
-                    .display1
+                    .headline4
                     .copyWith(color: Theme.of(context).errorColor)),
           ),
           SizedBox(

@@ -1,16 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../config/theme.dart';
-import 'package:Appecommerce/data/repositories/fake_repos/password_repository.dart';
-import 'package:Appecommerce/data/repositories/fake_repos/settings_repository.dart';
-import 'package:Appecommerce/presentation/features/profile/password_bloc.dart';
-import 'package:Appecommerce/presentation/features/profile/password_event.dart';
-import 'package:Appecommerce/presentation/features/profile/password_state.dart';
-import 'package:Appecommerce/presentation/features/profile/settings_bloc.dart';
-import 'package:Appecommerce/presentation/features/profile/settings_event.dart';
-import 'package:Appecommerce/presentation/features/profile/settings_state.dart';
-import 'package:Appecommerce/presentation/widgets/widgets.dart';
+import '../../../../config/theme.dart';
+import '../../../../data/repositories/fake_repos/password_repository.dart';
+import '../../../../data/repositories/fake_repos/settings_repository.dart';
+import '../../../../presentation/features/profile/password_bloc.dart';
+import '../../../../presentation/features/profile/password_event.dart';
+import '../../../../presentation/features/profile/password_state.dart';
+import '../../../../presentation/features/profile/settings_bloc.dart';
+import '../../../../presentation/features/profile/settings_event.dart';
+import '../../../../presentation/features/profile/settings_state.dart';
+import '../../../../presentation/widgets/widgets.dart';
 
 class SettingsView extends StatefulWidget {
   final Function changeView;

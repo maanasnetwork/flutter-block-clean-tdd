@@ -35,7 +35,7 @@ class _AppLabelRightCheckboxState extends State<AppLabelRightCheckbox> {
             Container(
                 width: widget.width - 50,
                 child: Text(widget.title,
-                    style: _theme.textTheme.display1.copyWith(
+                    style: _theme.textTheme.headline4.copyWith(
                         color: _checked
                             ? _theme.accentColor
                             : _theme.primaryColor))),

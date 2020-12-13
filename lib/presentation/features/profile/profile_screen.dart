@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:Appecommerce/presentation/widgets/widgets.dart';
+import '../../widgets/widgets.dart';
 
 import '../wrapper.dart';
 import 'profile.dart';
 import 'profile_bloc.dart';
-import 'views/order_details.dart';
-import 'views/orders.dart';
-import 'views/payment_methods.dart';
-import 'views/promos.dart';
-import 'views/reviews.dart';
 import 'views/settings.dart';
-import 'views/shipping_addresses.dart';
 
 class ProfileScreen extends StatefulWidget {
   ProfileScreen({Key key}) : super(key: key);
@@ -50,13 +44,7 @@ class _ProfileWrapperState extends AppWrapperState<ProfileWrapper> {
         builder: (BuildContext context, ProfileState state) {
           return getPageView(<Widget>[
             ProfileView(changeView: changePage),
-            MyOrdersView(changeView: changePage),
-            MyShippingAddressesView(changeView: changePage),
-            PaymentMethodsView(changeView: changePage),
-            PromosView(changeView: changePage),
-            MyReviewsView(changeView: changePage),
             SettingsView(changeView: changePage),
-            MyOrderDetailsView(changeView: changePage),
           ]);
         });
   }
